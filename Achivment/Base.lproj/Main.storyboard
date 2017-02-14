@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="t0f-Ah-jwM">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,73 +19,76 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACHIEVEMENT UNLOCK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-jm-wd6">
-                                <rect key="frame" x="64" y="89" width="192" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Achievement Icon" translatesAutoresizingMaskIntoConstraints="NO" id="5DO-YV-ZJV">
-                                <rect key="frame" x="100" y="140" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="Aay-VB-Mq9"/>
-                                    <constraint firstAttribute="width" constant="120" id="Eko-BS-9F1"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mustache" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5f-aI-GXy">
-                                <rect key="frame" x="122" y="285" width="76" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSg-mV-YKO">
-                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
-                                <color key="backgroundColor" red="0.224986732006073" green="0.75355786085128784" blue="0.35765209794044495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Byb-N9-SLm"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="✔️">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ga1-tk-UOp">
-                                <rect key="frame" x="28" y="404" width="264" height="84"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="264" id="B1B-jM-uln"/>
-                                    <constraint firstAttribute="height" constant="84" id="evf-T1-z3t"/>
-                                </constraints>
-                                <string key="text">The sight of the tumblersrestored
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHQ-n4-ba2">
+                                <rect key="frame" x="10" y="84" width="300" height="312"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACHIEVEMENT UNLOCK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-jm-wd6">
+                                        <rect key="frame" x="56" y="10" width="189" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Achievement Icon" translatesAutoresizingMaskIntoConstraints="NO" id="5DO-YV-ZJV">
+                                        <rect key="frame" x="90" y="60.5" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="04q-We-0yL"/>
+                                            <constraint firstAttribute="width" secondItem="5DO-YV-ZJV" secondAttribute="height" multiplier="1:1" id="i0e-Tf-bQC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mustache" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5f-aI-GXy">
+                                        <rect key="frame" x="112" y="190.5" width="76" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ga1-tk-UOp">
+                                        <rect key="frame" x="2" y="261" width="296" height="84"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="BuE-g0-jM2"/>
+                                        </constraints>
+                                        <string key="text">The sight of the tumblersrestored
 Bob Sawyer to a degree of equanimi-
 ty which he had not possessed since
 his interview with his landlady.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="t5f-aI-GXy" firstAttribute="top" secondItem="5DO-YV-ZJV" secondAttribute="bottom" constant="10" id="DWc-7W-JYg"/>
+                                    <constraint firstItem="5DO-YV-ZJV" firstAttribute="centerX" secondItem="bHQ-n4-ba2" secondAttribute="centerX" id="DcE-mr-JwW"/>
+                                    <constraint firstItem="gxN-jm-wd6" firstAttribute="top" secondItem="bHQ-n4-ba2" secondAttribute="top" constant="10" id="LiC-8u-gWX"/>
+                                    <constraint firstItem="ga1-tk-UOp" firstAttribute="top" secondItem="t5f-aI-GXy" secondAttribute="bottom" constant="50" id="QLk-nV-eMr"/>
+                                    <constraint firstItem="ga1-tk-UOp" firstAttribute="leading" secondItem="bHQ-n4-ba2" secondAttribute="leading" constant="2" id="Vib-p4-Cjg"/>
+                                    <constraint firstItem="t5f-aI-GXy" firstAttribute="centerX" secondItem="bHQ-n4-ba2" secondAttribute="centerX" id="azs-2f-PAf"/>
+                                    <constraint firstItem="gxN-jm-wd6" firstAttribute="centerX" secondItem="bHQ-n4-ba2" secondAttribute="centerX" id="c4j-hc-Yc4"/>
+                                    <constraint firstItem="5DO-YV-ZJV" firstAttribute="top" secondItem="gxN-jm-wd6" secondAttribute="bottom" constant="30" id="jBh-OR-FuX"/>
+                                    <constraint firstItem="ga1-tk-UOp" firstAttribute="centerX" secondItem="bHQ-n4-ba2" secondAttribute="centerX" id="mei-er-HzO"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyq-T2-43R">
+                                <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.38543822350000001" green="1" blue="0.30067102340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vE9-Jo-xHA"/>
+                                </constraints>
+                                <state key="normal" title="✓"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="t5f-aI-GXy" firstAttribute="top" secondItem="5DO-YV-ZJV" secondAttribute="bottom" constant="25" id="5YL-E1-VOB"/>
-                            <constraint firstItem="gxN-jm-wd6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="6lO-uw-Tmf"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oSg-mV-YKO" secondAttribute="bottom" id="Cik-v4-Bod"/>
-                            <constraint firstItem="gxN-jm-wd6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="Cja-Hq-7ez"/>
-                            <constraint firstItem="ga1-tk-UOp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Frr-m5-TXd"/>
-                            <constraint firstItem="oSg-mV-YKO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WQ8-tx-cUY"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t5f-aI-GXy" secondAttribute="bottom" constant="265" id="WrW-Tm-TGj"/>
-                            <constraint firstItem="t5f-aI-GXy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="122" id="arS-fN-5iX"/>
-                            <constraint firstAttribute="trailing" secondItem="oSg-mV-YKO" secondAttribute="trailing" id="evu-6h-fes"/>
-                            <constraint firstItem="5DO-YV-ZJV" firstAttribute="top" secondItem="gxN-jm-wd6" secondAttribute="bottom" constant="30" id="fFh-iS-59d"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gxN-jm-wd6" secondAttribute="trailing" constant="48" id="ieq-Ft-QAU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ga1-tk-UOp" secondAttribute="trailing" constant="12" id="kyP-tp-amC"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5DO-YV-ZJV" secondAttribute="bottom" constant="308" id="lxK-EG-Yxh"/>
-                            <constraint firstAttribute="trailing" secondItem="t5f-aI-GXy" secondAttribute="trailing" constant="122" id="rRD-cX-mYu"/>
-                            <constraint firstItem="5DO-YV-ZJV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="sOg-Z0-Dkd"/>
-                            <constraint firstAttribute="trailing" secondItem="5DO-YV-ZJV" secondAttribute="trailing" constant="100" id="twt-yH-jJK"/>
-                            <constraint firstItem="oSg-mV-YKO" firstAttribute="top" secondItem="ga1-tk-UOp" secondAttribute="bottom" constant="30" id="z83-Of-w32"/>
+                            <constraint firstItem="jyq-T2-43R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1kX-SI-cVU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jyq-T2-43R" secondAttribute="bottom" id="Gen-7A-fpu"/>
+                            <constraint firstItem="bHQ-n4-ba2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QPD-fS-TyZ"/>
+                            <constraint firstItem="bHQ-n4-ba2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vdd-cC-6cf"/>
+                            <constraint firstItem="jyq-T2-43R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zwg-s9-KA2"/>
+                            <constraint firstItem="bHQ-n4-ba2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="jOB-ZG-UTt"/>
+                            <constraint firstItem="bHQ-n4-ba2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="oVp-YL-iOH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Achievement" id="aaA-i3-nSY">
